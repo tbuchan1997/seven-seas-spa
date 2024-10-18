@@ -1,6 +1,13 @@
 /*Google fonts import*/
 
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+/*Generic Styles*/
+
+h1,
+h2,
+h5 {
+    font-family: 'Handlee', cursive;
+}
 
 /*Navbar*/
 
@@ -96,4 +103,34 @@
     .wellness-tips li {
         font-size: 0.8em;
     }
+}
+
+/*Testimonials*/
+
+.testimonials {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.testimonials .carousel-item img {
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.testimonials .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.testimonials h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.testimonials p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
 }
