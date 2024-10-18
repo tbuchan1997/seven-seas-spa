@@ -23,6 +23,14 @@ h5 {
     width: 30px;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 /*Hero*/
 
 .hero-section {
@@ -99,6 +107,10 @@ h5 {
     font-size: 1.2em;
     margin-bottom: 15px;
 }
+
+/*Footer*/
+
+
 
 /* Media Queries */
 @media (max-width: 768px) {
