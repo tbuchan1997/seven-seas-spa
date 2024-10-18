@@ -1,3 +1,7 @@
+/*Google fonts import*/
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
 /*Navbar*/
 
 .nav-home {
@@ -10,4 +14,20 @@
 
 #logo {
     width: 30px;
+}
+
+/*Hero*/
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero.png') no-repeat center center;
+    background-size: cover;
+    color: #FFEBD4;
+}
+
+.hero-section h1 {
+    font-family: 'Handlee', cursive;
+}
+
+.btn {
+    color: #3B2F2F;
 }
