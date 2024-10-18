@@ -31,3 +31,69 @@
 .btn {
     color: #3B2F2F;
 }
+
+/*Wellness tips*/
+
+.wellness-tips {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.wellness-tips h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.wellness-tips p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.wellness-tips ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.wellness-tips li {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .wellness-tips {
+        padding: 15px;
+    }
+
+    .wellness-tips h2 {
+        font-size: 1.5em;
+    }
+
+    .wellness-tips p {
+        font-size: 1em;
+    }
+
+    .wellness-tips li {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .wellness-tips {
+        padding: 10px;
+    }
+
+    .wellness-tips h2 {
+        font-size: 1.2em;
+    }
+
+    .wellness-tips p {
+        font-size: 0.9em;
+    }
+
+    .wellness-tips li {
+        font-size: 0.8em;
+    }
+}
