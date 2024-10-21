@@ -1,150 +1,88 @@
-/*Google fonts import*/
-
-@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
-/*Generic Styles*/
-
-h1,
-h2,
-h5 {
+/* Apply the Handlee font to all headings */
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Handlee', cursive;
 }
 
-/*Navbar*/
+.navbar-custom {
+    color: #3B2F2F;
+}
 
-.nav-home {
+.navbar-custom .nav-link {
+    color: #3B2F2F;
+}
+
+.navbar-custom .nav-link.active {
     font-weight: bold;
 }
 
-.navbar-text {
-    color: #3B2F2F;
+/* Make the navbar sticky */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-#logo {
-    width: 30px;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/*Hero*/
-
-.hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero.png') no-repeat center center;
+/* Style the hero section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero.png');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #FFEBD4;
+    padding: 8rem 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 
+This CSS rule adds padding to the left and right of the body and main elements. 
+This ensures that the content is not right up against the viewport on small screens.
+*/
+main {
+    margin: 2rem 0;
+}
+
+/* Style the footer */
+.footer {
+    margin-top: auto;
+    background-color: #6F4E37;
     color: #FFEBD4;
 }
 
-.hero-section h1 {
-    font-family: 'Handlee', cursive;
+.footer i.bi {
+    color: #FFEBD4;
 }
 
-.btn {
-    color: #3B2F2F;
+/* Highlight the active nav link */
+.nav-item.active .nav-link {
+    color: #000000;
+    /* Change to the color you want */
+    font-weight: bolder;
+    /* Makes the text bold */
 }
 
-/*Wellness tips*/
-
-.wellness-tips {
-    padding: 20px;
-    margin: 20px 0;
-    background-color: #f9f9f9;
-    border-radius: 8px;
+/* Style the service cards */
+.card {
+    border: none;
 }
 
-.wellness-tips h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
 }
 
-.wellness-tips p {
-    font-size: 1.2em;
-    margin-bottom: 15px;
+/* Set the size of the testimonial images */
+.testimonial-image {
+    width: 100px;
+    height: 100px;
 }
 
-.wellness-tips ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-.wellness-tips li {
-    font-size: 1em;
-    margin-bottom: 10px;
-}
-
-
-
-/*Testimonials*/
-
-.testimonials {
-    padding: 20px;
-    margin: 20px 0;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-}
-
-.testimonials .carousel-item img {
-    max-width: 150px;
-    margin: 0 auto;
-}
-
-.testimonials .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.testimonials h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.testimonials p {
-    font-size: 1.2em;
-    margin-bottom: 15px;
-}
-
-/*Footer*/
-
-
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .wellness-tips {
-        padding: 15px;
-    }
-
-    .wellness-tips h2 {
-        font-size: 1.5em;
-    }
-
-    .wellness-tips p {
-        font-size: 1em;
-    }
-
-    .wellness-tips li {
-        font-size: 0.9em;
-    }
-}
-
-@media (max-width: 480px) {
-    .wellness-tips {
-        padding: 10px;
-    }
-
-    .wellness-tips h2 {
-        font-size: 1.2em;
-    }
-
-    .wellness-tips p {
-        font-size: 0.9em;
-    }
-
-    .wellness-tips li {
-        font-size: 0.8em;
-    }
+/* Applies rounded corners to images with the 'rounded-image' class. Adjust the border-radius value to control the roundness. */
+.rounded-image {
+    border-radius: 15px;
+    /* Adjust the px value as needed */
 }
